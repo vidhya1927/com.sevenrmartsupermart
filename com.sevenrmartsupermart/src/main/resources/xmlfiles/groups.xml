@@ -1,0 +1,19 @@
+<suite name="group">
+	<listeners>
+		<listener class-name="com.sevenrmartsupermart.listeners.ExtentReporter"></listener>
+	</listeners>
+	<test name="SmokeTest">
+		<groups>
+			<run>
+				<include name="Sanity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.sevenrmartsupermart.tests.SubCategoryTest"></class>
+			<class name="com.sevenrmartsupermart.tests.LoginTest"></class>
+
+		</classes>
+	</test>
+
+
+</suite>

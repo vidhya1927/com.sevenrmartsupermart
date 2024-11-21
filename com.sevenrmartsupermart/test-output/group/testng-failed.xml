@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [group]">
+  <listeners>
+    <listener class-name="com.sevenrmartsupermart.listeners.ExtentReporter"/>
+  </listeners>
+  <test thread-count="5" name="SmokeTest(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.sevenrmartsupermart.tests.SubCategoryTest">
+        <methods>
+          <include name="verifyAddNewSubCategory"/>
+          <include name="terminateBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.sevenrmartsupermart.tests.SubCategoryTest -->
+    </classes>
+  </test> <!-- SmokeTest(failed) -->
+</suite> <!-- Failed suite [group] -->

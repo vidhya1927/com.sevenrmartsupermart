@@ -1,0 +1,29 @@
+<suite name="supermartrelease" thread-count="3" parallel="tests">
+	<listeners>
+		<listener class-name="com.sevenrmartsupermart.listeners.ExtentReporter"></listener>
+	</listeners>
+	<test name="SmokeTest">
+		<classes>
+			<class name="com.sevenrmartsupermart.tests.LoginTest"></class>
+			<class name="com.sevenrmartsupermart.tests.SubCategoryTest"></class>
+
+		</classes>
+	</test>
+
+	<test name="Regression">
+		<classes>
+			<class name="com.sevenrmartsupermart.tests.HomeTest"></class>
+			<class name="com.sevenrmartsupermart.tests.LoginTest"></class>
+
+		</classes>
+	</test>
+
+	<test name="Sanity">
+		<classes>
+			<class name="com.sevenrmartsupermart.tests.HomeTest"></class>
+			<class name="com.sevenrmartsupermart.tests.LoginTest"></class>
+
+		</classes>
+	</test>
+
+</suite>
