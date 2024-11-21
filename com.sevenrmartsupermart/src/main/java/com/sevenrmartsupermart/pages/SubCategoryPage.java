@@ -34,6 +34,7 @@ public class SubCategoryPage {
 
 	public void clickOnSearchIcon() {
 		searchIcon.click();
+		System.out.println("Hi");
 	}
 
 	public void clickOnSearchButton() {
