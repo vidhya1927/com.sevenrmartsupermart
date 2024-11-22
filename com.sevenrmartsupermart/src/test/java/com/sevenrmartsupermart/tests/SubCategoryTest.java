@@ -66,5 +66,4 @@ public class SubCategoryTest extends Base {
 		String actualAlertText = subcategorypage.addNewCategory("Electronics", product);
 		Assert.assertEquals(actualAlertText, "Alert!  ");
 	}
-
 }
