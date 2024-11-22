@@ -50,18 +50,20 @@ public class LoginPage {
 		signinButton.click();
 	}
 
-	public void login(String userName, String password) {
+	public HomePage login(String userName, String password) {
 		enterUserName(userName);
 		enterPassWord(password);
 		clickSignInButton();
+		return new HomePage(driver);
 	}
 
-	public void login() {
+	public HomePage login() {
 		String userName = properties.getProperty("username");
 		String password = properties.getProperty("password");
 		enterUserName(userName);
 		enterPassWord(password);
 		clickSignInButton();
+		return new HomePage(driver);
 	}
 
 	public void invalidLoginError() {

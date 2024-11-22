@@ -18,11 +18,9 @@ public class SubCategoryTest extends Base {
 
 	@Test(groups = "Sanity")
 	public void verifySubCategorySearch() {
-		loginpage = new LoginPage(driver);
-		homepage = new HomePage(driver);
-		subcategorypage = new SubCategoryPage(driver);
-		loginpage.login();
-		homepage.clickOnSubCategory();
+		loginpage = new LoginPage(driver);		
+		homepage=loginpage.login();
+		subcategorypage =homepage.clickOnSubCategory();
 		subcategorypage.clickOnSearchIcon();
 		subcategorypage.searchSubCategory("Electronics", "Otis");
 		String actualResult = subcategorypage.getSearchResult();
